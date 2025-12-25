@@ -578,16 +578,11 @@
                 white-space: nowrap;
             }
         }
-
-        /* --- Mobile fix for floating profile image --- */
+        
+        /* --- Mobile Hero Offset Fix (for taller nav) --- */
         @media (max-width: 768px) {
             .hero {
-                padding-top: 180px;   /* extra space for float animation */
-                overflow: visible;    /* allow animated content to move */
-            }
-        
-            nav {
-                height: auto;         /* ensure nav expands naturally */
+                padding-top: 180px; /* increased to match wrapped nav height */
             }
         }
 
