@@ -559,6 +559,26 @@
                 justify-content: center;
             }
         }
+
+        /* --- Mobile Navigation Fix --- */
+        @media (max-width: 768px) {
+            nav .container {
+                flex-wrap: wrap;
+            }
+        
+            .nav-links {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+                margin-top: 0.5rem;
+            }
+        
+            .nav-links li {
+                white-space: nowrap;
+            }
+        }
+
     </style>
 </head>
 <body>
