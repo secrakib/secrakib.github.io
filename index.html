@@ -81,6 +81,21 @@
             color: var(--primary);
         }
 
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            transition: all 0.3s;
+        }
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -385,6 +400,20 @@
             font-size: 0.85rem;
             font-weight: 500;
         }
+        
+        /* Competetion Badge */
+        .badge {
+            display: inline-block;
+            padding: 0.35rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--success), var(--primary));
+            color: white;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
 
         /* Experience Timeline */
         .timeline {
@@ -542,6 +571,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#competitions">Competitions</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -792,6 +822,60 @@
                         <span class="tech-tag">FastAPI</span>
                         <span class="tech-tag">Docker</span>
                         <span class="tech-tag">RAG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitions Section -->
+    <section id="competitions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Competitions & Datathons</h2>
+                <p class="section-subtitle">Applied ML under real-world constraints</p>
+            </div>
+    
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-type">🏆 National Datathon</span>
+                        <h3>
+                            CUET National Datathon 2025
+                            <span class="badge">Top 25%</span>
+                        </h3>
+                        <div class="project-meta">
+                            <span>📅 Dec 2025</span>
+                            <span>🎓 Chittagong University of Engineering & Technology</span>
+                        </div>
+                    </div>
+    
+                    <div class="project-body">
+                        <p>
+                            <strong>Ranking:</strong>
+                            <span style="color: var(--primary); font-weight: 700;">
+                                37<sup>th</sup> / 151 teams
+                            </span>
+                        </p>
+                        <p style="margin-top: 0.5rem;"><strong>Score:</strong> 81% Macro F1 (Private Leaderboard)</p>
+    
+                        <p style="margin-top: 1rem;"><strong>Approach & Contributions:</strong></p>
+                        <ul>
+                            <li>Instruction-tuned all layers of <strong>Qwen3-VL 8B</strong> using <strong>LoRA</strong> for multimodal classification</li>
+                            <li>Applied <strong>4-bit quantization</strong> via <strong>Unsloth</strong> to enable training under strict compute constraints</li>
+                            <li>Handled the complete ML pipeline independently, including preprocessing, training, validation, and evaluation</li>
+                            <li>Addressed significant <strong>distribution shift</strong> between training and test data to improve generalization</li>
+                        </ul>
+    
+                        <p style="margin-top: 1rem;"><strong>Affiliation:</strong> Sylhet Engineering College</p>
+                    </div>
+    
+                    <div class="project-footer">
+                        <span class="tech-tag">Qwen3-VL</span>
+                        <span class="tech-tag">LoRA</span>
+                        <span class="tech-tag">Unsloth</span>
+                        <span class="tech-tag">4-bit Quantization</span>
+                        <span class="tech-tag">Multimodal Learning</span>
                     </div>
                 </div>
             </div>
